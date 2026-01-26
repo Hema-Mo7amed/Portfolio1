@@ -46,7 +46,7 @@ section {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: url(Images/1.png) no-repeat;
+    background: url(Images/1.webp) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
@@ -242,7 +242,7 @@ section {
 
 @media (max-width: 768px) {
     .main {
-        background-image: url(Images/Phone.png); 
+        background-image: url(Images/Phone.webp); 
         background-size: cover;
         background-position: center;
         background-attachment: scroll !important;
@@ -321,4 +321,5 @@ section {
     .Project-image img {
         height: 250px;
     }
+
 }
