@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
 * {
     font-family: "Poppins", sans-serif;
     margin: 0;
@@ -8,18 +9,11 @@
     scroll-behavior: smooth;
 }
 
-body {
-    background-color: #f8f9fa;
-}
-
-/* ================= HEADER ================= */
 
 header {
     background-color: #343A40;
     width: 100%;
     position: fixed;
-    top: 0;
-    left: 0;
     z-index: 999;
 
     display: flex;
@@ -29,6 +23,7 @@ header {
     padding: 10px 200px;
 }
 
+
 .logo {
     text-decoration: none;
     color: aliceblue;
@@ -36,6 +31,7 @@ header {
     font-weight: 700;
     font-size: 1.8em;
 }
+
 
 .nav a {
     text-decoration: none;
@@ -47,15 +43,18 @@ header {
     transition: 0.3s ease;
 }
 
+
 .nav a:hover {
     color: #00E0FF;
 }
+
 
 section {
     padding: 100px 200px;
 }
 
-/* ================= MAIN SECTION ================= */
+
+/* ================= MAIN ================= */
 
 .main {
     width: 100%;
@@ -70,11 +69,13 @@ section {
     background-attachment: scroll;
 }
 
+
 .main h2 {
     color: #F4F4F4;
     font-size: 1.4em;
     font-weight: 500;
 }
+
 
 .main h2 span {
     display: inline-block;
@@ -85,6 +86,7 @@ section {
     font-size: 1.7em;
     font-weight: 600;
 }
+
 
 .main h3 {
     color: #fff;
@@ -97,6 +99,7 @@ section {
     margin-top: 10px;
     margin-bottom: 30px;
 }
+
 
 .main-btn {
     color: #fff;
@@ -120,10 +123,12 @@ section {
     transition: 0.7s ease;
 }
 
+
 .main-btn:hover {
     background-color: #00c4df;
     transform: scale(1.1);
 }
+
 
 .social-icons a {
     color: #fff;
@@ -135,9 +140,11 @@ section {
     transition: 0.3s ease;
 }
 
+
 .social-icons a:hover {
     color: #00E0FF;
 }
+
 
 /* ================= TITLES ================= */
 
@@ -153,6 +160,7 @@ section {
     margin-bottom: 30px;
 }
 
+
 /* ================= CONTENT ================= */
 
 .content {
@@ -163,6 +171,7 @@ section {
 
     flex-wrap: wrap;
 }
+
 
 /* ================= SKILL CARDS ================= */
 
@@ -182,9 +191,11 @@ section {
     transition: 0.7s ease;
 }
 
+
 .card:hover {
     transform: scale(1.05);
 }
+
 
 .icon {
     color: #1A4789;
@@ -194,9 +205,11 @@ section {
     text-align: center;
 }
 
+
 .info {
     text-align: center;
 }
+
 
 .info h3 {
     color: #1A4789;
@@ -207,6 +220,7 @@ section {
     margin: 10px;
 }
 
+
 .info h4 {
     color: #1863d4;
 
@@ -216,9 +230,11 @@ section {
     margin: 5px;
 }
 
+
 .info p {
     font-size: 1em;
 }
+
 
 /* ================= PROJECTS ================= */
 
@@ -231,9 +247,11 @@ section {
     background-attachment: fixed;
 }
 
+
 .Projects .content {
     margin-top: 30px;
 }
+
 
 /* PROJECT CARD */
 
@@ -252,19 +270,20 @@ section {
 
     margin: 20px;
 
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-
     transition: 0.7s ease;
 }
+
 
 .project-card:hover {
     transform: scale(1.05);
 }
 
+
 .project-card:hover .Project-image img {
     opacity: 0.9;
     transform: scale(1.03);
 }
+
 
 /* PROJECT IMAGE */
 
@@ -274,6 +293,7 @@ section {
 
     overflow: hidden;
 }
+
 
 .Project-image img {
     width: 100%;
@@ -286,11 +306,13 @@ section {
     transition: 0.7s ease;
 }
 
+
 /* PROJECT INFO */
 
 .project-info {
     padding: 1em;
 }
+
 
 .project-category {
     font-size: 0.8em;
@@ -298,6 +320,7 @@ section {
 
     min-height: 40px;
 }
+
 
 .project-titel {
     display: flex;
@@ -314,6 +337,7 @@ section {
     margin-top: 10px;
 }
 
+
 .more-details {
     text-decoration: none;
 
@@ -324,9 +348,11 @@ section {
     transition: 0.3s ease;
 }
 
+
 .more-details:hover {
     color: #601cfc;
 }
+
 
 /* ================= CONTACT ================= */
 
@@ -334,9 +360,11 @@ section {
     font-size: 4.5em;
 }
 
+
 .content .info h3 {
     color: #000;
 }
+
 
 /* ================= FOOTER ================= */
 
@@ -350,17 +378,19 @@ section {
     display: flex;
 
     justify-content: space-between;
-    align-items: center;
 }
+
 
 .footer-titel {
     font-size: 1.3em;
     font-weight: 600;
 }
 
+
 .footer-titel span {
     color: #3A6CF4;
 }
+
 
 .footer .social-icons a {
     font-size: 1.3em;
@@ -368,9 +398,9 @@ section {
     padding: 0 12px 0 0;
 }
 
-/* ================= RESPONSIVE DESIGN ================= */
 
-/* TABLET */
+/* ================= TABLET ================= */
+
 @media (max-width: 1024px) {
 
     header {
@@ -383,7 +413,9 @@ section {
 
 }
 
-/* MOBILE */
+
+/* ================= MOBILE ================= */
+
 @media (max-width: 768px) {
 
     .main {
@@ -395,15 +427,18 @@ section {
         background-attachment: scroll !important;
     }
 
+
     header {
         padding: 10px 20px;
 
         flex-direction: column;
     }
 
+
     .nav {
         margin-top: 10px;
     }
+
 
     .nav a {
         padding-left: 10px;
@@ -412,25 +447,31 @@ section {
         font-size: 0.9em;
     }
 
+
     section {
         padding: 60px 20px;
     }
+
 
     .main h2 {
         font-size: 1.1em;
     }
 
+
     .main h2 span {
         font-size: 1.4em;
     }
+
 
     .main h3 {
         font-size: 1.2em;
     }
 
+
     .title {
         font-size: 1.8em;
     }
+
 
     .card,
     .project-card {
@@ -439,9 +480,11 @@ section {
         margin: 10px 0;
     }
 
+
     .Project-image {
         height: 300px;
     }
+
 
     .footer {
         flex-direction: column;
@@ -451,6 +494,7 @@ section {
         gap: 20px;
     }
 
+
     .footer .social-icons {
         justify-content: center;
 
@@ -459,7 +503,9 @@ section {
 
 }
 
-/* SMALL MOBILE */
+
+/* ================= SMALL MOBILE ================= */
+
 @media (max-width: 480px) {
 
     .main-btn {
@@ -468,9 +514,11 @@ section {
         font-size: 1em;
     }
 
+
     .Project-image {
         height: 250px;
     }
+
 
     .project-titel {
         font-size: 0.9em;
