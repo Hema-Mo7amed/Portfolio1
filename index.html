@@ -1,58 +1,409 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>عرض المشاريع الهندسية</title>
-  
-  <!-- Preload للخلفية لسرعة التحميل على التليفون -->
-  <link rel="preload" as="image" href="bg-mobile.jpg" media="(max-width: 768px)">
-  <link rel="preload" as="image" href="bg-desktop.jpg" media="(min-width: 769px)">
-  
-  <link rel="stylesheet" href="style.css">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://Hema-Mo7amed.github.io/Portfolio1/" />
+    <meta property="og:title" content="Ibrahim Mohamed - Portfolio" />
+    <meta property="og:description"
+        content="Welcome to my professional portfolio. Explore my projects, skills, and experience." />
+    <meta property="og:image" content="https://Hema-Mo7amed.github.io/Portfolio1/Images/thumb.png" />
+
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Ibrahim Mohamed - Portfolio" />
+    <meta property="twitter:description"
+        content="Welcome to my professional portfolio. Explore my projects, skills, and experience." />
+    <meta property="twitter:image"
+        content="https://Hema-Mo7amed.github.io/Portfolio1/Images/thumb.png" />
+
+    <!-- Preload critical background images for fast loading -->
+    <link rel="preload" as="image" href="Images/1.webp" fetchpriority="high">
+    <link rel="preload" as="image" href="Images/3.png" fetchpriority="high">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Images/Hema.png">
+
+    <title>Portfolio - Ibrahim Mohamed</title>
 </head>
+
 <body>
 
-  <!-- Hero Section with Optimized Background -->
-  <header class="hero-section">
-    <div class="overlay"></div>
-    <div class="hero-content">
-      <h1>منصة المشاريع الهندسية</h1>
-      <p>استعراض المخططات والتفاصيل الإنشائية والمعمارية</p>
-    </div>
-  </header>
+    <!-- Header -->
+    <header id="header">
+        <a href="#" class="logo">Ibrahim Mohamed</a>
 
-  <!-- Unified Project Container -->
-  <main class="container">
-    <section class="project-card">
-      <div class="card-header">
-        <h2>المشروع الهندسي المتكامل</h2>
-        <p>اختر نوع المخطط لعرض التفاصيل الخاصة به</p>
-      </div>
+        <nav class="nav">
+            <a href="#skills">Skills</a>
+            <a href="#Projects">Projects</a>
+            <a href="#Contact">Contact</a>
+        </nav>
+    </header>
 
-      <!-- CAD Image Display -->
-      <div class="cad-image-container">
-        <img id="cadPreview" src="cad-main.jpg" alt="صورة رسمة الكاد" loading="eager" decoding="async">
-        <div class="cad-badge" id="cadBadge">مخطط الكاد الرئيسي</div>
-      </div>
+    <!-- Main Section -->
+    <section class="main">
+        <div>
+            <h2>
+                Hello, I'm Ibrahim
+                <br>
+                <span>Civil Engineering Student</span>
+            </h2>
 
-      <!-- Control Buttons (Villa & Frame) -->
-      <div class="project-toggle-buttons">
-        <button class="toggle-btn active" onclick="switchProject('villa')" id="btnVilla">
-          <span class="icon">🏠</span> مشروع الفيلا
-        </button>
-        <button class="toggle-btn" onclick="switchProject('frame')" id="btnFrame">
-          <span class="icon">🏗️</span> مشروع الفريم
-        </button>
-      </div>
+            <h3>I lay the foundations for the future</h3>
 
-      <!-- Dynamic Content Area -->
-      <div class="project-details-content" id="projectDetails">
-        <!-- Details injected via JavaScript -->
-      </div>
+            <a href="CV-Ibrahim.html" class="main-btn">
+                Curriculum Vitae
+            </a>
+
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/ibrahimmuhmmad" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+                <a href="https://x.com/Hema_muhmmad" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+
+                <a href="https://www.facebook.com/hema.muhmmad?mibextid=ZbWKwL" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+
+                <a href="https://www.instagram.com/ibrahim__mo7med" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </div>
     </section>
-  </main>
 
-  <script src="script.js"></script>
+    <!-- Skills -->
+    <section class="cardes" id="skills">
+
+        <h2 class="title">Skills</h2>
+
+        <div class="content">
+
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-sharp fa-solid fa-desktop"></i>
+                </div>
+
+                <div class="info">
+                    <h3>Engineering Software</h3>
+
+                    <h4>
+                        AutoCAD <br>
+                        ASD <br>
+                        Revit
+                    </h4>
+
+                    <p>
+                        These skills were developed through multiple training
+                        courses, helping me grow continuously and build a strong
+                        foundation in this field.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-helmet-safety"></i>
+                </div>
+
+                <div class="info">
+                    <h3>Technical Skills</h3>
+
+                    <h4>
+                        Technical Office <br>
+                        Structural Drawing <br>
+                        Site Work
+                    </h4>
+
+                    <p>
+                        Civil Engineer merging academic excellence with early
+                        field experience to deliver precise, high-quality
+                        engineering solutions.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+
+                <div class="info">
+                    <h3>Soft Skills</h3>
+
+                    <h4>
+                        Effective Communication <br>
+                        Time Management <br>
+                        Problem Solving <br>
+                        Teamwork <br>
+                        Photoshop <br>
+                        AI Tools
+                    </h4>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="Projects" id="Projects">
+
+        <h2 class="title">Projects</h2>
+
+        <div class="content">
+
+            <!-- 1. GeoMapper -->
+            <div class="project-card">
+                <div class="Project-image">
+                    <img src="Images/GeoMapper.jpg" alt="GeoMapper Project" loading="lazy">
+                </div>
+                <div class="project-info">
+                    <p class="project-category">
+                        Sustainable Rubber & Asphalt Infrastructure
+                    </p>
+                    <strong class="project-titel">
+                        <span>RubberRoads GIS</span>
+                        <a href="https://www.facebook.com/share/p/1Bqycscqhd/"
+                            class="more-details"
+                            target="_blank">
+                            More Details
+                        </a>
+                    </strong>
+                </div>
+            </div>
+
+            <!-- 2. Ferwod Link -->
+            <div class="project-card">
+                <div class="Project-image">
+                    <img src="Images/Ferwod Link.jpeg" alt="Ferwod Link Project" loading="lazy">
+                </div>
+                <div class="project-info">
+                    <p class="project-category">
+                        Innovation & Graduation Projects
+                    </p>
+                    <strong class="project-titel">
+                        <span>Ferwod Link</span>
+                        <a href="https://www.facebook.com/share/1P9R4f7ZtV/"
+                            class="more-details"
+                            target="_blank">
+                            2nd Place
+                        </a>
+                    </strong>
+                </div>
+            </div>
+
+            <!-- 3. Civil Engineering Department Conference -->
+            <div class="project-card">
+                <div class="Project-image">
+                    <img src="Images/Civil.png" alt="Civil Engineering Department Conference" loading="lazy">
+                </div>
+                <div class="project-info">
+                    <p class="project-category">
+                        Scientific Conferences & Event Organization
+                    </p>
+                    <strong class="project-titel">
+                        <span>Civil Engineering Conference</span>
+                        <a href="https://lnkd.in/p/eTxAinfy"
+                            class="more-details"
+                            target="_blank">
+                            More Details
+                        </a>
+                    </strong>
+                </div>
+            </div>
+
+            <!-- 4. AZEX 26 Team -->
+            <div class="project-card">
+                <div class="Project-image">
+                    <img src="Images/Azex26.jpg" alt="AZEX 26 Team" loading="lazy">
+                </div>
+                <div class="project-info">
+                    <p class="project-category">
+                        Student Activities & Engineering Exhibition
+                    </p>
+                    <strong class="project-titel">
+                        <span>AZEX 26 Team</span>
+                        <a href="https://lnkd.in/p/eTxAinfy"
+                            class="more-details"
+                            target="_blank">
+                            More Details
+                        </a>
+                    </strong>
+                </div>
+            </div>
+
+            <!-- 5. Summer Training -->
+            <div class="project-card">
+                <div class="Project-image">
+                    <img src="Images/Wark 2.jpg" alt="Summer Training" loading="lazy">
+                </div>
+                <div class="project-info">
+                    <p class="project-category">
+                        Monitoring Site Operations and Compliance
+                    </p>
+                    <strong class="project-titel">
+                        <span>Summer Training</span>
+                        <a href="https://www.linkedin.com/posts/ibrahimmuhmmad_civilengineering-engineeringtraining-construction-activity-7368387988826857473-ISxq"
+                            class="more-details"
+                            target="_blank">
+                            More Details
+                        </a>
+                    </strong>
+                </div>
+            </div>
+
+            <!-- 6. Villa Project -->
+            <div class="project-card">
+                <div class="Project-image">
+                    <img src="Images/Villa Project .jpg" alt="Villa Project" loading="lazy">
+                </div>
+                <div class="project-info">
+                    <p class="project-category">
+                        AutoCAD Structural Project
+                    </p>
+                    <strong class="project-titel">
+                        <span>Villa Project</span>
+                        <a href="PDF/Villa Project .pdf"
+                            class="more-details"
+                            target="_blank">
+                            View Project
+                        </a>
+                    </strong>
+                </div>
+            </div>
+
+            <!-- 7. RC Frame Project -->
+            <div class="project-card">
+                <div class="Project-image">
+                    <img src="Images/RC Frame Project .jpg" alt="RC Frame Project" loading="lazy">
+                </div>
+                <div class="project-info">
+                    <p class="project-category">
+                        Reinforced Concrete Frame Project
+                    </p>
+                    <strong class="project-titel">
+                        <span>RC Frame Project</span>
+                        <a href="PDF/RC Frame Project.pdf"
+                            class="more-details"
+                            target="_blank">
+                            View Project
+                        </a>
+                    </strong>
+                </div>
+            </div>
+
+            <!-- 8. Finishing Course -->
+            <div class="project-card">
+                <div class="Project-image">
+                    <img src="Images/Certificate Finishing.png" alt="Finishing Course Certificate" loading="lazy">
+                </div>
+                <div class="project-info">
+                    <p class="project-category">
+                        Construction & Finishing Training
+                    </p>
+                    <strong class="project-titel">
+                        <span>Finishing Course</span>
+                        <a href="PDF/Finishing.pdf"
+                            class="more-details"
+                            target="_blank">
+                            View Course
+                        </a>
+                    </strong>
+                </div>
+            </div>
+
+            <!-- 9. Technical Office Course -->
+            <div class="project-card">
+                <div class="Project-image">
+                    <img src="Images/Certificate Technical Office.png" alt="Technical Office Course Certificate" loading="lazy">
+                </div>
+                <div class="project-info">
+                    <p class="project-category">
+                        Technical Office Training
+                    </p>
+                    <strong class="project-titel">
+                        <span>Technical Office</span>
+                        <a href="PDF/Technical Office.pdf"
+                            class="more-details"
+                            target="_blank">
+                            View Course
+                        </a>
+                    </strong>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="card-contant" id="Contact">
+
+        <h2 class="title">Contact Information</h2>
+
+        <div class="content">
+
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="info">
+                    <h3>Phone</h3>
+                    <p>+201012162395</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="info">
+                    <h3>Email</h3>
+                    <p>ibrahim.muhmmad.reda@gmail.com</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <p class="footer-titel">
+            Copyright @ <span>Ibrahim Mohamed</span>
+        </p>
+
+        <div class="social-icons">
+
+            <a href="https://www.linkedin.com/in/ibrahimmuhmmad" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <a href="https://x.com/Hema_muhmmad" target="_blank">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+
+            <a href="https://www.facebook.com/hema.muhmmad?mibextid=ZbWKwL" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+
+            <a href="https://www.instagram.com/ibrahim__mo7med" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+        </div>
+
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
 </body>
 </html>
