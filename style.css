@@ -1,241 +1,89 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+<!DOCTYPE html>
+<html lang="en">
 
-* {
-    font-family: "Poppins", sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAD Projects - Ibrahim Mohamed</title>
 
-body {
-    background-color: #f8f9fa;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Images/Hema.png">
+</head>
 
-/* Header */
-header {
-    background-color: #343A40;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 999;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 200px;
-}
+<body>
 
-.logo {
-    text-decoration: none;
-    color: aliceblue;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 1.8em;
-}
+    <!-- Header -->
+    <header>
+        <a href="index.html" class="logo">Ibrahim Mohamed</a>
 
-.nav a {
-    text-decoration: none;
-    color: aliceblue;
-    font-weight: 500;
-    font-size: 1.1em;
-    padding-left: 30px;
-    transition: 0.3s ease;
-}
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="index.html#Projects">Projects</a>
+        </nav>
+    </header>
 
-.nav a:hover {
-    color: #00E0FF;
-}
+    <!-- CAD Section -->
+    <section class="Projects" style="min-height: 80vh; padding-top: 150px;">
 
-/* CAD Main Section */
-.cad-section {
-    padding: 130px 200px 80px 200px;
-    flex: 1;
-}
+        <h2 class="title">AutoCAD Structural Projects</h2>
 
-.title {
-    display: flex;
-    justify-content: center;
-    color: #1A4789;
-    font-size: 2.2em;
-    font-weight: 800;
-    margin-bottom: 5px;
-}
+        <div class="content">
 
-.subtitle {
-    text-align: center;
-    color: #6c757d;
-    font-size: 1.1em;
-    margin-bottom: 40px;
-}
+            <!-- Villa Project -->
+            <div class="project-card">
+                <div class="Project-image">
+                    <img src="Images/CAD.png" alt="Villa Project">
+                </div>
+                <div class="project-info">
+                    <p class="project-category">AutoCAD Structural Design</p>
+                    <strong class="project-titel">
+                        <span>Villa Project</span>
+                        <a href="Pdf/Villa Project .pdf" class="more-details" target="_blank">
+                            View PDF
+                        </a>
+                    </strong>
+                </div>
+            </div>
 
-.content {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
+            <!-- RC Frame Project -->
+            <div class="project-card">
+                <div class="Project-image">
+                    <img src="Images/CAD.png" alt="RC Frame Project">
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Reinforced Concrete Frame</p>
+                    <strong class="project-titel">
+                        <span>RC Frame Project</span>
+                        <a href="Pdf/RC Frame Project.pdf" class="more-details" target="_blank">
+                            View PDF
+                        </a>
+                    </strong>
+                </div>
+            </div>
 
-/* Project Cards */
-.project-card {
-    background-color: #fff;
-    border: 5px solid #fff;
-    min-height: 14em;
-    width: 23em;
-    overflow: hidden;
-    border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-    transition: 0.7s ease;
-}
+        </div>
 
-.project-card:hover {
-    transform: scale(1.03);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-}
+        <div style="text-align: center; margin-top: 40px;">
+            <a href="index.html#Projects" class="main-btn">Back to All Projects</a>
+        </div>
 
-.Project-image {
-    width: 100%;
-    height: 320px;
-    overflow: hidden;
-}
+    </section>
 
-.Project-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    transition: 0.7s ease;
-}
+    <!-- Footer -->
+    <footer class="footer">
+        <p class="footer-titel">
+            Copyright @ <span>Ibrahim Mohamed</span>
+        </p>
 
-.project-card:hover .Project-image img {
-    opacity: 0.9;
-    transform: scale(1.03);
-}
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/ibrahimmuhmmad"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://x.com/Hema_muhmmad"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.facebook.com/hema.muhmmad?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/ibrahim__mo7med"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
 
-.project-info {
-    padding: 1em;
-}
-
-.project-category {
-    font-size: 0.85em;
-    color: #6c757d;
-    margin-bottom: 5px;
-}
-
-.project-titel {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-    text-transform: uppercase;
-    font-weight: 800;
-    margin-top: 10px;
-}
-
-.more-details {
-    text-decoration: none;
-    color: #3A6CF4;
-    white-space: nowrap;
-    transition: 0.3s ease;
-}
-
-.more-details:hover {
-    color: #601cfc;
-}
-
-.back-btn-container {
-    text-align: center;
-    margin-top: 50px;
-}
-
-.main-btn {
-    color: #fff;
-    background-color: #1A4789;
-    text-decoration: none;
-    font-size: 1em;
-    font-weight: 600;
-    display: inline-block;
-    padding: 0.8em 2em;
-    border-radius: 12px;
-    transition: 0.3s ease;
-}
-
-.main-btn:hover {
-    background-color: #00E0FF;
-    color: #000;
-    transform: scale(1.05);
-}
-
-/* Footer */
-.footer {
-    background-color: #343A40;
-    color: #fff;
-    padding: 2em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.footer-titel {
-    font-size: 1.1em;
-    font-weight: 600;
-}
-
-.footer-titel span {
-    color: #3A6CF4;
-}
-
-.footer .social-icons a {
-    color: #fff;
-    font-size: 1.3em;
-    padding: 0 10px;
-    transition: 0.3s ease;
-}
-
-.footer .social-icons a:hover {
-    color: #00E0FF;
-}
-
-/* Responsive Design */
-@media (max-width: 1024px) {
-    header, .cad-section {
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-}
-
-@media (max-width: 768px) {
-    header {
-        padding: 10px 20px;
-        flex-direction: column;
-    }
-
-    .nav {
-        margin-top: 10px;
-    }
-
-    .nav a {
-        padding: 0 10px;
-        font-size: 0.9em;
-    }
-
-    .cad-section {
-        padding: 140px 20px 60px 20px;
-    }
-
-    .title {
-        font-size: 1.8em;
-    }
-
-    .project-card {
-        width: 100%;
-    }
-
-    .footer {
-        flex-direction: column;
-        text-align: center;
-        gap: 15px;
-    }
-}
+</body>
+</html>
