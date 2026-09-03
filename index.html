@@ -3,54 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>عرض المشاريع الهندسية</title>
-  
-  <!-- Preload للخلفية لسرعة التحميل على التليفون -->
-  <link rel="preload" as="image" href="bg-mobile.jpg" media="(max-width: 768px)">
-  <link rel="preload" as="image" href="bg-desktop.jpg" media="(min-width: 769px)">
-  
+  <title>الكورسات والمشاريع الهندسية</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Hero Section with Optimized Background -->
-  <header class="hero-section">
-    <div class="overlay"></div>
-    <div class="hero-content">
-      <h1>منصة المشاريع الهندسية</h1>
-      <p>استعراض المخططات والتفاصيل الإنشائية والمعمارية</p>
+  <main class="courses-container">
+
+    <!-- 1. كورس التشطيبات - المكتب الفني -->
+    <div class="course-card">
+      <div class="card-content">
+        <h3>التشطيبات - المكتب الفني</h3>
+        <p>عرض وتحميل الملفات الخاصة بكورس التشطيبات والمكتب الفني</p>
+      </div>
+      <div class="card-actions">
+        <!-- مسار ملف الـ PDF داخل فولدر pdf -->
+        <a href="pdf/technical_office_finishes.pdf" target="_blank" class="btn btn-view">View course</a>
+      </div>
     </div>
-  </header>
 
-  <!-- Unified Project Container -->
-  <main class="container">
-    <section class="project-card">
-      <div class="card-header">
-        <h2>المشروع الهندسي المتكامل</h2>
-        <p>اختر نوع المخطط لعرض التفاصيل الخاصة به</p>
+    <!-- 2. مشروع CAD Project (يحتوي على زري Villa و Frame بجانب View course) -->
+    <div class="course-card">
+      <div class="card-content">
+        <h3>CAD Project</h3>
+        <p>اختر المشروع المطلوب لعرض ملف الكاد / الـ PDF الخاص به</p>
       </div>
+      <div class="card-actions action-buttons">
+        <!-- زر View course الرئيسي إن وجد -->
+        <a href="pdf/cad_main.pdf" target="_blank" class="btn btn-view">View course</a>
+        
+        <!-- زر مشروع الفيلا -->
+        <a href="pdf/villa_project.pdf" target="_blank" class="btn btn-villa">Villa</a>
+        
+        <!-- زر مشروع الفريم -->
+        <a href="pdf/frame_project.pdf" target="_blank" class="btn btn-frame">Frame</a>
+      </div>
+    </div>
 
-      <!-- CAD Image Display -->
-      <div class="cad-image-container">
-        <img id="cadPreview" src="cad-main.jpg" alt="صورة رسمة الكاد" loading="eager" decoding="async">
-        <div class="cad-badge" id="cadBadge">مخطط الكاد الرئيسي</div>
-      </div>
-
-      <!-- Control Buttons (Villa & Frame) -->
-      <div class="project-toggle-buttons">
-        <button class="toggle-btn active" onclick="switchProject('villa')" id="btnVilla">
-          <span class="icon">🏠</span> مشروع الفيلا
-        </button>
-        <button class="toggle-btn" onclick="switchProject('frame')" id="btnFrame">
-          <span class="icon">🏗️</span> مشروع الفريم
-        </button>
-      </div>
-
-      <!-- Dynamic Content Area -->
-      <div class="project-details-content" id="projectDetails">
-        <!-- Details injected via JavaScript -->
-      </div>
-    </section>
   </main>
 
   <script src="script.js"></script>
