@@ -1,411 +1,79 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-* {
-    font-family: "Poppins", sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+.courses-container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 0 15px;
+  font-family: Arial, sans-serif;
 }
 
-header {
-    background-color: #343A40;
+.course-card {
+  background: #1e293b;
+  color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.btn-view {
+  background-color: #0284c7;
+  color: #fff;
+}
+
+.btn-view:hover {
+  background-color: #0369a1;
+}
+
+.btn-villa {
+  background-color: #10b981;
+  color: #fff;
+}
+
+.btn-villa:hover {
+  background-color: #059669;
+}
+
+.btn-frame {
+  background-color: #f59e0b;
+  color: #fff;
+}
+
+.btn-frame:hover {
+  background-color: #d97706;
+}
+
+/* التجاوب مع شاشات الموبايل */
+@media (max-width: 600px) {
+  .course-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .action-buttons {
     width: 100%;
-    position: fixed;
-    z-index: 999;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 200px;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-header.scrolled {
-    background-color: rgba(52, 58, 64, 0.95);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-}
-
-.logo {
-    text-decoration: none;
-    color: aliceblue;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 1.8em;
-}
-
-.nav a {
-    text-decoration: none;
-    color: aliceblue;
-    font-weight: 500;
-    font-size: 1.1em;
-    padding-left: 30px;
-    transition: 0.3s ease;
-}
-
-.nav a:hover {
-    color: #00E0FF;
-}
-
-section {
-    padding: 100px 200px;
-}
-
-/* ================= MAIN ================= */
-
-.main {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    background: #1a1a1a url(Images/1.webp) no-repeat center center;
-    background-size: cover;
-    background-attachment: scroll;
-}
-
-.main h2 {
-    color: #F4F4F4;
-    font-size: 1.4em;
-    font-weight: 500;
-}
-
-.main h2 span {
-    display: inline-block;
-    margin-top: 10px;
-    color: #00E0FF;
-    font-size: 1.7em;
-    font-weight: 600;
-}
-
-.main h3 {
-    color: #fff;
-    font-size: 1.5em;
-    font-weight: 700;
-    letter-spacing: 1px;
-    margin-top: 10px;
-    margin-bottom: 30px;
-}
-
-.main-btn {
-    color: #fff;
-    background-color: #00E0FF;
-    text-decoration: none;
-    font-size: 1.1em;
-    font-weight: 600;
-    display: inline-block;
-    padding: 0.9375em 2.1875em;
-    letter-spacing: 1px;
-    border-radius: 15px;
-    margin-bottom: 40px;
-    transition: 0.5s ease;
-}
-
-.main-btn:hover {
-    background-color: #00c4df;
-    transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 224, 255, 0.3);
-}
-
-.social-icons a {
-    color: #fff;
-    font-size: 1.7em;
-    padding-right: 30px;
-    transition: 0.3s ease;
-}
-
-.social-icons a:hover {
-    color: #00E0FF;
-    transform: translateY(-3px);
-}
-
-/* ================= TITLES ================= */
-
-.title {
-    display: flex;
-    justify-content: center;
-    color: #5691eb;
-    font-size: 2.2em;
-    font-weight: 800;
-    margin-bottom: 30px;
-}
-
-/* ================= CONTENT ================= */
-
-.content {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-/* ================= SKILL CARDS ================= */
-
-.card {
-    background-color: #fff;
-    width: 21.25em;
-    box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
-    border-radius: 20px;
-    padding: 25px;
-    margin: 15px;
-    transition: transform 0.5s ease, box-shadow 0.5s ease, opacity 0.6s ease;
-}
-
-.card:hover {
-    transform: translateY(-8px) scale(1.02);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
-}
-
-.icon {
-    color: #1A4789;
-    font-size: 7.5em;
-    text-align: center;
-}
-
-.info {
-    text-align: center;
-}
-
-.info h3 {
-    color: #1A4789;
-    font-size: 1.5em;
-    font-weight: 700;
-    margin: 10px;
-}
-
-.info h4 {
-    color: #1863d4;
-    font-size: 1.2em;
-    font-weight: 700;
-    margin: 5px;
-}
-
-.info p {
-    font-size: 1em;
-}
-
-/* ================= PROJECTS ================= */
-
-.Projects {
-    background: #2b2b2b url(Images/3.png) no-repeat center center;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-.Projects .content {
-    margin-top: 30px;
-}
-
-/* PROJECT CARD */
-
-.project-card {
-    background-color: #fff;
-    border: 5px solid #fff;
-    min-height: 14em;
-    width: 23em;
-    overflow: hidden;
-    border-radius: 10px;
-    margin: 20px;
-    transition: transform 0.5s ease, box-shadow 0.5s ease, opacity 0.6s ease;
-}
-
-.project-card:hover {
-    transform: translateY(-8px) scale(1.03);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
-}
-
-.project-card:hover .Project-image img {
-    opacity: 0.95;
-    transform: scale(1.05);
-}
-
-/* PROJECT IMAGE */
-
-.Project-image {
-    width: 100%;
-    height: 370px;
-    overflow: hidden;
-    background-color: #f0f0f0;
-}
-
-.Project-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    transition: transform 0.5s ease, opacity 0.5s ease;
-}
-
-/* PROJECT INFO */
-
-.project-info {
-    padding: 1em;
-}
-
-.project-category {
-    font-size: 0.8em;
-    color: #000;
-    min-height: 40px;
-}
-
-.project-titel {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-    text-transform: uppercase;
-    font-weight: 800;
-    margin-top: 10px;
-}
-
-.more-details {
-    text-decoration: none;
-    color: #3A6CF4;
-    white-space: nowrap;
-    transition: 0.3s ease;
-}
-
-.more-details:hover {
-    color: #601cfc;
-}
-
-/* ================= CONTACT ================= */
-
-.content .icon {
-    font-size: 4.5em;
-}
-
-.content .info h3 {
-    color: #000;
-}
-
-/* ================= FOOTER ================= */
-
-.footer {
-    background-color: #343A40;
-    color: #fff;
-    padding: 2em;
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer-titel {
-    font-size: 1.3em;
-    font-weight: 600;
-}
-
-.footer-titel span {
-    color: #3A6CF4;
-}
-
-.footer .social-icons a {
-    font-size: 1.3em;
-    padding: 0 12px 0 0;
-}
-
-/* ================= SCROLL REVEAL ANIMATIONS ================= */
-
-.reveal {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-.reveal.active {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* ================= TABLET ================= */
-
-@media (max-width: 1024px) {
-    header {
-        padding: 10px 50px;
-    }
-
-    section {
-        padding: 80px 50px;
-    }
-}
-
-/* ================= MOBILE ================= */
-
-@media (max-width: 768px) {
-    .main {
-        background-image: url(Images/Phone.webp);
-        background-size: cover;
-        background-position: center;
-        background-attachment: scroll !important;
-    }
-
-    header {
-        padding: 10px 20px;
-        flex-direction: column;
-    }
-
-    .nav {
-        margin-top: 10px;
-    }
-
-    .nav a {
-        padding-left: 10px;
-        padding-right: 10px;
-        font-size: 0.9em;
-    }
-
-    section {
-        padding: 60px 20px;
-    }
-
-    .main h2 {
-        font-size: 1.1em;
-    }
-
-    .main h2 span {
-        font-size: 1.4em;
-    }
-
-    .main h3 {
-        font-size: 1.2em;
-    }
-
-    .title {
-        font-size: 1.8em;
-    }
-
-    .card,
-    .project-card {
-        width: 100%;
-        margin: 10px 0;
-    }
-
-    .Project-image {
-        height: 300px;
-    }
-
-    .footer {
-        flex-direction: column;
-        text-align: center;
-        gap: 20px;
-    }
-
-    .footer .social-icons {
-        justify-content: center;
-        display: flex;
-    }
-}
-
-/* ================= SMALL MOBILE ================= */
-
-@media (max-width: 480px) {
-    .main-btn {
-        padding: 0.7em 1.5em;
-        font-size: 1em;
-    }
-
-    .Project-image {
-        height: 250px;
-    }
-
-    .project-titel {
-        font-size: 0.9em;
-    }
+  }
+
+  .btn {
+    flex: 1;
+  }
 }
