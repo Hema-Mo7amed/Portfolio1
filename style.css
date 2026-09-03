@@ -276,6 +276,25 @@ section {
     color: #601cfc;
 }
 
+/* تنسيق الزرين داخل كارت CAD Project */
+.project-titel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.project-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.project-buttons .more-details {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+}
+
 /* ================= CONTACT ================= */
 
 .content .icon {
